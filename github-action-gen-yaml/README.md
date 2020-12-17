@@ -1,4 +1,4 @@
-# github-action-gen-step
+# github-action-gen-yml
 GitHub Actions yml file generator
 
 
