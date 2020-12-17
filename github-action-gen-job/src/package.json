@@ -1,7 +1,7 @@
 {
-  "name": "circle-ci-gen-job",
+  "name": "github-actions-gen-job",
   "version": "1.0.0",
-  "description": "CircleCI job generator",
+  "description": "GitHub Actions job generator",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

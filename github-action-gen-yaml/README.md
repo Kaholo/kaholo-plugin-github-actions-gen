@@ -1,5 +1,5 @@
-# circleci-gen-yaml
-CircleCI yml file generator
+# github-action-gen-step
+GitHub Actions yml file generator
 
 
 ## Method: Create Yml
@@ -10,6 +10,6 @@ Generates the yml.
 
 **Parameters:**
 
-* Version - the yml version
-* Results (array) - Array of all the previous CircleCI generator plugins results
+* Pipeline Name - the name of the pipeline
+* Results (array) - Array of all the previous GitHub Actions generator plugins results
 * Output Path (optional) - output path to ccreate the yml file in.
