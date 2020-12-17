@@ -1,0 +1,34 @@
+{
+  "name": "Github-Yml",
+  "description": "Github yml generator",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.jpg",
+  "version": "1.0.0",
+  "settings" : [],
+  "methods": [
+    {
+      "name": "createYml",
+      "viewName": "Create Yml",
+      "params": [
+        {
+          "name": "name",
+          "viewName": "Pipeline Name",
+          "type": "string"
+        },
+        {
+          "name": "results",
+          "viewName": "Results (array)",
+          "type": "string"
+        },
+        {
+          "name": "outputPath",
+          "viewName": "Output Path",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

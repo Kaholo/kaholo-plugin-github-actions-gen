@@ -1,2 +1,2 @@
 # kaholo-plugin-github-actions-gen
-Kaholo plugins for generating GitHub Actions yaml files
+GitHub Actions yml generation plugins for Kaholo

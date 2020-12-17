@@ -1,0 +1,91 @@
+{
+  "name": "GitHub-Step",
+  "description": "GitHub actions step generator",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.jpg",
+  "version": "1.0.0",
+  "settings" : [],
+  "methods": [
+    {
+      "name": "runStep",
+      "viewName": "Run step",
+      "params": [
+        {
+          "name": "job",
+          "viewName": "Job ID",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "env",
+          "viewName": "Environment Variables",
+          "type": "text"
+        },
+        {
+          "name": "workingDir",
+          "viewName": "Working Directory",
+          "type": "string"
+        },
+        {
+          "name": "command",
+          "viewName": "Command",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "checkoutStep",
+      "viewName": "Checkout step",
+      "params": [
+        {
+          "name": "job",
+          "viewName": "Job ID",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "env",
+          "viewName": "Environment Variables",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "setupNodeStep",
+      "viewName": "Setup Node step",
+      "params": [
+        {
+          "name": "job",
+          "viewName": "Job ID",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "env",
+          "viewName": "Environment Variables",
+          "type": "text"
+        },
+        {
+          "name": "nodeVersion",
+          "viewName": "Node Version",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

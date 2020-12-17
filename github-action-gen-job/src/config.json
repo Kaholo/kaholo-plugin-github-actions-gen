@@ -1,0 +1,104 @@
+{
+  "name": "GitHub-Job",
+  "description": "Github job generator",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.jpg",
+  "version": "1.0.0",
+  "settings" : [],
+  "methods": [
+    {
+      "name": "createJob",
+      "viewName": "Create Job",
+      "params": [
+        {
+          "name": "id",
+          "viewName": "ID",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "env",
+          "viewName": "Environment",
+          "type": "text"
+        },
+        {
+          "name": "needs",
+          "viewName": "Needs",
+          "type": "text"
+        },
+        {
+          "name": "runsOn",
+          "viewName": "Runs On",
+          "type": "autocomplete",
+          "autocompleteType": "function",
+          "functionName": "getEnviorments"
+        }
+      ]
+    },
+    {
+      "name": "createWebhookEventTrigger",
+      "viewName": "Create Webhook Event Trigger",
+      "params": [
+        {
+          "name": "event",
+          "viewName": "Event",
+          "type": "string"
+        },
+        {
+          "name": "types",
+          "viewName": "Types",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "createPushOrPullReuqestTrigger",
+      "viewName": "Create Push or Pull Request Trigger",
+      "params": [
+        {
+          "name": "type",
+          "viewName": "Type",
+          "type": "options",
+          "options": [
+            {
+              "id": "pull_request",
+              "name": "Pull Request"
+            },
+            {
+              "id": "push",
+              "name": "Push"
+            }
+          ]
+        },
+        {
+          "name": "branches",
+          "viewName": "Branches",
+          "type": "text"
+        },
+        {
+          "name": "tags",
+          "viewName": "Tags",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "createScheduleTrigger",
+      "viewName": "Create Schedule Trigger",
+      "params": [
+        {
+          "name": "cron",
+          "viewName": "Cron",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
